@@ -1,7 +1,5 @@
-// Create a new module
 angular.module('myAppModule', []);
 
-// configure the module with a controller
 angular.module('myAppModule').controller('MyFilterDemoCtrl', function($scope) {
     var someData = {
         firstName: 'Serkan',
@@ -27,7 +25,6 @@ angular.module('myAppModule').controller('MyFilterDemoCtrl', function($scope) {
 
 });
 
-// configure the module with a filter
 angular.module('myAppModule').filter('stripDashes', function() {
     return function(txt) {
         return txt.split('-').join(' ');
